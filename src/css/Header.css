@@ -1,0 +1,39 @@
+#header {
+    background: #282c34;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    height: 60px;
+}
+
+
+
+.header-element{
+    color: Gray;
+    margin: 0 20px;
+}
+
+.header-element:hover {
+    color: lightgray;
+    text-decoration: none;
+}
+
+.header-element-current-page {
+    color: White;
+    text-shadow: 0 0 10px lightgray;
+}
+
+#navbar-user-widget{
+    max-width: 20vw;
+    text-overflow: ellipsis;
+    position: absolute;
+    right: 15px;
+    font-size: 20px;
+    display: inline-block;
+    text-align: right;
+    height: 60px;
+
+}

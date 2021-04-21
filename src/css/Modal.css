@@ -1,0 +1,53 @@
+/* The Modal (background) */
+.modal-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 700px;
+    min-width: 400px;
+    width:50%;
+    height: 600px;
+    z-index: 100;
+    color: black;
+}
+
+.modal {
+    position: relative;
+    z-index: 1; /* Sit on top */
+    width: 100%; /* Full width */
+    height: 100%;
+    margin-top: auto;
+    overflow: auto; /* Enable scroll if needed */
+    padding: 15px;
+    color: black;
+    font-size: 18px;
+}
+
+/** ANIMATIONS FOR MODALS */
+.animate-enter {
+    opacity: 0;
+    top:-25px;
+    display: block;
+}
+.animate-enter-active {
+    opacity: 1;
+    transform: translatey(25px);
+    transition: opacity 300ms ease, transform 300ms;
+    display: block;
+}
+.animate-exit {
+    opacity: 1;
+    transform: translatey(-25px);
+    transition: opacity 300ms ease, transform 300ms;
+    display: block;
+}
+.animate-exit-active {
+    opacity: 0;
+    top:0px;
+    display: block;
+}
+
+.animate-enter-done{
+    display: block;
+}
