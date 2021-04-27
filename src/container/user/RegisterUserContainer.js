@@ -1,13 +1,21 @@
-import React, { useState,  } from 'react';
+import React, { useState, useEffect  } from 'react';
+import axios from "axios";
+
+//Containers
+import ModalContainer from '../modal/ModalContainer';
 
 //Components
-import Modal from '../../component/user/Modal';
 import RegisterUserModal from '../../component/user/RegisterUserModal';
-import codes, {getCode} from "../../data/codes";
 
+import codes, {getCode} from "../../data/codes";
 
 const RegisterUserContainer = (props) => {
 
+    const [username, setUser] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [subscribe, setSubscription] = useState(false);
+    
     //Warnings to be displayed on Modal
     const [warning, setWarning] = useState('')
     const [emailWarning, setEmailWarning] = useState('')
@@ -28,10 +36,10 @@ const RegisterUserContainer = (props) => {
             hasCorrectCase: false,
             hasNumber: false,
         });
-        props.setUser('');
-        props.setEmail('');
-        props.setPassword('');
-        props.setSubscription(false);
+        setUser('');
+        setEmail('');
+        setPassword('');
+        setSubscription(false);
     }
 
     const validatePassword = (password) => {
@@ -78,43 +86,56 @@ const RegisterUserContainer = (props) => {
         props.setUserRegistrationModalVisible(false)
         props.setLoginModalVisible(true);
     }
+  
     const handleEmailInputChange = (e) => {
 
         const email = e.target.value;
-        props.setEmail(email);
+        setEmail(email);
     }
-    const handleUserInputChange = (e) => props.setUser(e.target.value);
+  
+    const handleUserInputChange = (e) => setUser(e.target.value);
+ 
     const handlePasswordInputChange = (e) => {
 
         const password = e.target.value;
         validatePassword(password)
-        props.setPassword(password);
+        setPassword(password);
 
     }
-    const handleSubscribeCheck = (e) => props.setSubscription(e.target.checked);
+
+    const handleSubscribeCheck = (e) => setSubscription(e.target.checked);
 
     const handleUserRegistration = (event) => {
 
         event.preventDefault();
         const passwordValidated = passwordIsValidated(passwordValidation);
-        if(validateEmail(props.email) && validateUsername(props.user) && passwordValidated){
+        if(validateEmail(email) && validateUsername(username) && passwordValidated){
 
-            props.handleUserRegistration().then((resp) => {
+            axios({
+                method:'post',
+                url: process.env.REACT_APP_API_URL + '/users/validateRegistration',
+                data: {
+                    username,
+                    email,
+                    password,
+                    subscribe
+                }
+            })                
+            .then((resp) => {
 
                 console.log('resp');
-                console.log(resp);
+                console.log(resp.data);
                 resetRegisterUserModal();
                 hideUserRegistrationModal();
-            }).catch((err) => {
+            })
+            .catch((err) => {
 
                 console.log('err');
                 console.log(err);
-                setWarning(getCode(err.code).message)
-
-                /***************
-                 *
-                 * PLACE REDUX DISPATCH FOR RAISING AN ALERT
-                 */
+                if(err.response.data && err.response.data.code)
+                    props.alert(getCode(err.response.data.code).message)
+                else
+                    props.alert(getCode('NA_UREG').message)
             })
         } else {
             if(!passwordValidated)
@@ -124,17 +145,20 @@ const RegisterUserContainer = (props) => {
 
     return (
         <>
-            <Modal visible={ props.modalVisible } modalHeight={'900px'}>
+            <ModalContainer
+                visible={ props.modalVisible }
+                width={'700px'}
+            >
                 <RegisterUserModal
                     submit={ handleUserRegistration }
-                    email={ props.email }
+                    email={ email }
                     handleEmailInputChange={ handleEmailInputChange }
-                    user={ props.user }
+                    username={ username }
                     handleUserInputChange={ handleUserInputChange }
-                    password={ props.password }
+                    password={ password }
                     handlePasswordInputChange={ handlePasswordInputChange }
                     hideModal={ hideUserRegistrationModal }
-                    subscribe={ props.subscribe }
+                    subscribe={ subscribe }
                     handleSubscribeCheck={ handleSubscribeCheck }
                     swapToLogin={ swapToLogin }
                     warning={ warning }
@@ -142,7 +166,7 @@ const RegisterUserContainer = (props) => {
                     usernameWarning={ usernameWarning }
                     passwordValidation={ passwordValidation }
                 />
-            </Modal>
+            </ModalContainer>
         </>
     )
 }

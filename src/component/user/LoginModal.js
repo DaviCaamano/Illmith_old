@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 const LoginModal = (props) =>
     <form
-        className="login-form"
+        id="login-form"
         onSubmit={ props.submit }
     >
         <div className={'user-title'}>
@@ -30,7 +30,7 @@ const LoginModal = (props) =>
             placeholder="Username or Email"
             name="username"
             required
-            value={props.user}
+            value={props.username}
             onChange={props.handleUserInputChange}
         />
 
@@ -77,7 +77,7 @@ const LoginModal = (props) =>
             </button>
 
             <span className="psw">
-                <Link to="#">Forgot password?</Link>
+                <Link to="#" onClick={props.swapToResetPassword}>Forgot password?</Link>
             </span>
         </div>
     </form>

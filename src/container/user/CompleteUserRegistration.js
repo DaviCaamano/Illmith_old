@@ -7,8 +7,8 @@ const CompleteUserRegistration = (props) => {
     // const history = useHistory();
     const { token } = useParams();
     const history = useHistory();
-    useEffect(() => {
 
+    const sendRegistrationToken = () => {
 
         axios({
             method: 'post',
@@ -21,11 +21,17 @@ const CompleteUserRegistration = (props) => {
             history.push('/');
         }).catch((err) => {
 
-            ////////THIS IS WHERE AN ALERT WOULD GO
+            ///ALERT GOES HERE
+            ///ALERT GOES HERE
+            ///ALERT GOES HERE
+            ///ALERT GOES HERE
+            ///ALERT GOES HERE
             console.log(err.response);
             history.push('/');
         })
-    }, [])
+    }
+
+    useEffect(sendRegistrationToken, [sendRegistrationToken])
 
 
     return <div></div>

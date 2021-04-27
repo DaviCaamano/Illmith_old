@@ -6,7 +6,7 @@ const Navbar = (props) => {
     const {path} = useRouteMatch();
 
     return (
-        <div>
+        <div id="navbar-links">
             {
                 props.navElements.map(
                     (element) =>

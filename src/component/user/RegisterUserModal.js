@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 const RegisterUserModal = (props) =>
     <form
-        className="register-user-form"
+        id="register-user-form"
         onSubmit={ props.submit }
     >
         <div className={'user-title'}>
@@ -50,7 +50,7 @@ const RegisterUserModal = (props) =>
             type="text"
             placeholder="Username"
             name="username"
-            value={props.user}
+            value={props.username}
             onChange={props.handleUserInputChange}
         />
         <br/>
@@ -100,7 +100,7 @@ const RegisterUserModal = (props) =>
                 </button>
             </div>
             <div className={'register-user-infobox-right'}>
-                Your Password must contain at least
+                Your Password must contain at least:
                 <br/>
                 <span style={{color: props.passwordValidation.hasSixCharacters? 'green': 'black'}}>
                     &nbsp;&nbsp;&#8226;&nbsp;6 characters

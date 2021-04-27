@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import previews from '../../data/mapPreviews';
+
 import '../../css/Splash.css';
+
 import Splash from '../../component/splash/Splash';
 import HorizontalFrameBar from '../../component/splash/HorizontalBarFrame';
+import SplashAlertContainer from './SplashAlertContainer';
+import {SplashAlertConsumer} from "../../context/SplashAlertContext";
+
 const FIVE_MINUTES = 5000;
 const FIVE_SECONDS = 3000;
 
@@ -72,7 +77,20 @@ const SplashContainer = (props) => {
                 previewImage1={previews[firstBackgroundIndex]}
                 previewImage2={previews[secondBackgroundIndex]}
             >
-                <HorizontalFrameBar styleElements={{ top: -5, filter: 'drop-shadow(0px 3px 4px black)'  }} />
+                <SplashAlertConsumer>
+                    {(context) =>{
+
+                        return <SplashAlertContainer
+                            visible={context.visible}
+                            setVisible={context.setVisible}
+                            content={context.content}
+                            setContent={context.setContent}
+                        />
+                    }
+
+                    }
+                </SplashAlertConsumer>
+
                 <HorizontalFrameBar styleElements={{ bottom:0, filter: 'drop-shadow(0px 3px 4px black)'  }} />
             </Splash>
 

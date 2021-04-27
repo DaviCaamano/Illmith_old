@@ -33,7 +33,7 @@ const codes = {
                 code: 'IEM_UREG'
             },
             invalidPassword: {
-                message: 'Invalid Account Password. See Below for password requirments.',
+                message: 'Invalid Account Password. See Below for password requirements.',
                 code: 'IPW_UREG'
             },
             emailTooLong: {
@@ -48,11 +48,35 @@ const codes = {
                 message: 'Visit the link in the Registration email to finish registering this account.',
                 code: 'ENV_UREG'
             }
+        },
+        ResetPassword: {
+            generic: {
+                message: 'Error Resetting Password.',
+                code: 'NA_PWRS'
+            },
+            logoutRequired: {
+                message: 'Password Reset cannot proceed while you are logged in.',
+                code: 'LRQ_PWRS'
+            },
+        },
+        Logout: {
+            generic: {
+                message: 'Error logging user out.',
+                code: 'NA_USLO'
+            }
         }
     },
     Generic:{
         message: 'Internal Error.',
         code: 'IER_GNR'
+    },
+    ResetPassword: {
+        success: {
+            message: 'Your password has been reset.'
+        },
+        emailSent: {
+            message: 'A reset email has been sent to the email associated with this account.'
+        }
     }
 }
 

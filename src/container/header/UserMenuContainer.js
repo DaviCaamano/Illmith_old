@@ -26,6 +26,8 @@ const UserMenuContainer = (props) => {
         }
     ]
 
+    console.log('cookies')
+    console.log(cookies)
     const name = cookies.username && cookies.username !== 'null'? cookies.username: cookies.email.split('@')[0];
     return (
         <div

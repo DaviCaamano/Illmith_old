@@ -7,13 +7,21 @@ import '../../css/Header.css';
  *      xxxxx - A REGISTER PAGE
  *      REGISTER FUNCTIONALITY
  *      ADD DISMISS WHEN CLICKING OUTSIDE MODALS
- *      CREATE CUSTOM ALERT MODAL
- *          See CompleteUserRegistration, RegisterUserModal
- *      FORGOT PASSWORD FUNCTIONALITY
+ *      xxxxx CREATE CUSTOM ALERT MODAL
+ *          See
+ *              xxxxx CompleteUserRegistration,
+ *              xxxxx completeResetPassword,
+ *              xxxxx passwordResetContainer,
+ *              xxxxx RegisterUserModal,
+ *              xxxxx UserContext
+ *      Store only token in cookies, get login information on site first load
+ *          then pass to redux
+ *      xxxxx -FORGOT PASSWORD FUNCTIONALITY
  *      xxxxx - MAKE THE GREETING USE AN EMAIL BEFORE @ IF NO USERNAME IS PROVIDED
  *          ie: WELCOME DaviSantaCaamano
  *      Go to bookmark for setCustomValidity(); add it to the error reporting in login and register user.
  *      SETUP FOREIGN KEYS
+ *      Replace Back Link in Register and forgot password with an image.
  */
 //img
 import storystringLogo from '../../img/Storystring Logo White.png'
