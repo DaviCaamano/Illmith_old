@@ -4,7 +4,7 @@ const UserMenuBox = (props) => {
 
     return (
         <>
-            <span className={'logged-user-welcome-text'}>
+            <span className={'logged-user-welcome-text'} style={{marginTop: '3px'}}>
                 Welcome,
             </span>
             <span

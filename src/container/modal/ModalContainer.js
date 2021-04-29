@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useRef} from 'react';
 
 //components
 import Modal from '../../component/modal/Modal'
@@ -20,16 +20,32 @@ const ModalContainer = (props) => {
         if(props.minWidth) modalSize.minWidth = props.minWidth;
     }
 
-    const transitionFuncs = {};
-    if(props.onEnter) transitionFuncs.onEnter = props.onEnter;
-    if(props.onExit) transitionFuncs.onExit = props.onExit;
+    const backdropRef = useRef(null);
+    const transitionFuncs = {
+        onEnter: (e) => backdropRef.current.classList.remove('d-none'),
+        onExit: (e) => backdropRef.current.classList.add('d-none')
+    };
 
+    /**
+     * Function which checks if the parent would like to control if clicking the backdrop causes the modal to close.
+     * if props.onBackdropClose(e) is defined and returns false, the modal will not close.
+     * @param e, event
+     */
+    const onBackdropClick = (e) => {
+
+        //If props.onBackdropClose is not defined or if it is and it returns true;
+        if(!props.onBackdropClick || (props.onBackdropClick && props.onBackdropClick(e)))
+            props.setVisible(false);
+    }
     return (
         <Modal
             visible={props.visible}
             setVisible={props.setVisible}
             modalSize={modalSize}
-            {...transitionFuncs}
+            backdropRef={backdropRef}
+            transitionFuncs={transitionFuncs}
+            onBackdropClick={onBackdropClick}
+            zIndex={props.zIndex}
         >
             {props.children}
         </Modal>

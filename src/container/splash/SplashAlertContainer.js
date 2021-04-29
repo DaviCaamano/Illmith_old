@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import {CSSTransition} from "react-transition-group";
 import SplashAlert from '../../component/splash/SplashAlert';
 

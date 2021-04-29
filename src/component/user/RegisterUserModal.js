@@ -1,33 +1,42 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import back_button_img from "../../img/back button.png";
+import alert_img from "../../img/Exclamation Alert.png";
 
+//#0050a5
 const RegisterUserModal = (props) =>
     <form
         id="register-user-form"
         onSubmit={ props.submit }
     >
         <div className={'user-title'}>
-            <b>Create an Account</b>
-            <b className={'user-title-right'}>
+            Create an Account
+            <span className={'user-title-right'}>
                 <Link
                     className={'title-link'}
                     to={'#'}
                     onClick={props.swapToLogin}
                 >
-                    &lt; Login
+                    <img src={back_button_img}
+                         style={{
+                            height: '16px',
+                            marginBottom: '3px'
+                        }}
+                        alt={'Back to Login'}
+                    />
+                    Login
                 </Link>
-            </b>
+            </span>
         </div>
 
         <label className={'register-user-label'} htmlFor="register-email-input">
-            <b>Email</b>
+            Email
         </label>
-        <span style={{color: 'red', display: props.emailWarning? 'inline': 'none'}}>
-            &nbsp;&nbsp;Invalid Email address
+        <span className={`d-block warning-text`}>
+            &nbsp;&nbsp;{props.emailWarning? <img className='alert-img' src={alert_img} alt={props.emailWarning}/>: ''}
+            {props.emailWarning}
         </span>
-        <br/>
         <input
-            id={'register-email-input'}
             className={'register-user-input'}
             type="text"
             placeholder="Email"
@@ -35,31 +44,33 @@ const RegisterUserModal = (props) =>
             required
             value={props.email}
             onChange={props.handleEmailInputChange}
+            ref={props.emailRef}
         />
-
+        <br />
         <label className={'register-user-label'} htmlFor="register-user-input">
-            <b>Username</b> (optional)
+            Username <span className='label-optional-tag'>(optional)</span>
         </label>
-        <span style={{ color: 'red' }}>
-            &nbsp;&nbsp;{ props.usernameWarning }
+        <span className={`d-block warning-text`}>
+            &nbsp;&nbsp;{props.usernameWarning
+                ? <img className='alert-img' src={alert_img} alt={props.usernameWarning}/>
+                : ''
+            }
+            {props.usernameWarning}
         </span>
-        <br/>
         <input
-            id={'register-user-input'}
             className={'register-user-input'}
             type="text"
             placeholder="Username"
             name="username"
             value={props.username}
             onChange={props.handleUserInputChange}
+            ref={props.usernameRef}
         />
-        <br/>
+        <br />
         <label className={'register-user-label'} htmlFor="register-user-input">
-            <b>Password</b>
+            Password
         </label>
-        <br/>
         <input
-            id={'register-user-input'}
             className={'register-user-input'}
             type="password"
             placeholder="Password"
@@ -67,10 +78,12 @@ const RegisterUserModal = (props) =>
             required
             value={props.password}
             onChange={props.handlePasswordInputChange}
+            ref={props.passwordRef}
+            style={{ marginBottom: '0px'}}
         />
-        <br/>
-
+        <br />
         <span id={'register-user-warning'}>
+            {props.warning? <img className='alert-img' src={alert_img} alt={props.warning}/>: ''}
             {props.warning}
         </span>
         <button

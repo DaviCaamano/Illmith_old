@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import back_button from "../../img/back button.png";
 
 const LoginModal = (props) =>{
 
@@ -14,7 +15,14 @@ const LoginModal = (props) =>{
                     to={'#'}
                     onClick={props.swapToLogin}
                 >
-                    &lt; Login
+                    <img
+                        src={back_button}
+                        style={{
+                            height: '16px',
+                            marginBottom: '3px'
+                        }}
+                        alt={'Back to Login'}
+                    /> Login
                 </Link>
             </b>
         </div>

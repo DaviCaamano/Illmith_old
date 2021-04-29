@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {useParams} from "react-router-dom";
 
-import codes, {getCode} from "../../data/codes";
+import codes from "../../data/codes";
 const CompletePasswordReset = (props) => {
 
     const { token } = useParams();

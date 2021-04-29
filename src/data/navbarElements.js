@@ -13,15 +13,16 @@ const contactUs = {
     to: '/contact'
 }
 
-const kickstart= {
+const kickstarter= {
     name: 'Kickstarter',
-    to: 'kickstart.com'
+    to: 'http://www.kickstarter.com',
+    external: true
 }
 
 const elementArray = [
     news,
     explore,
     contactUs,
-    kickstart
+    kickstarter
 ];
 export default elementArray;

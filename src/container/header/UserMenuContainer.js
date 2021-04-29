@@ -1,11 +1,9 @@
 import React, {useState} from 'react';
-import {useCookies} from 'react-cookie';
+
 //components
 import UserMenu from '../../component/header/UserMenu';
 import UserMenuBox from '../../component/header/UserMenuBox'
 const UserMenuContainer = (props) => {
-
-    const [cookies] = useCookies(['username', 'email'])
 
     const [menuHovered, setMenuHovered] = useState(false);
     const [childHovered, setChildHovered] = useState(false);
@@ -26,16 +24,13 @@ const UserMenuContainer = (props) => {
         }
     ]
 
-    console.log('cookies')
-    console.log(cookies)
-    const name = cookies.username && cookies.username !== 'null'? cookies.username: cookies.email.split('@')[0];
     return (
         <div
             id={'user-menu-container'}
             className={' cursor-pointer'}
             onMouseEnter = {OnMenuMouseEnter}
             onMouseLeave={OnMenuMouseLeave}>
-            <UserMenuBox name={capitalize(name)} />
+            <UserMenuBox name={capitalize(props.name)} />
             <UserMenu
                 visible={childHovered || menuHovered}
                 mouseEnter={OnItemMouseEnter}

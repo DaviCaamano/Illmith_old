@@ -1,13 +1,15 @@
-/* The Modal (background) */
-.modal-container {
+.modal-backdrop {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 100;
     color: black;
-    filter: drop-shadow(0px 1px 2px rgba(0,0,0,.5));
-    pointer-events: none;
 }
 
 .modal {
@@ -17,33 +19,46 @@
     transition: opacity 300ms  ease, transform 300ms ease;
     display: block;
     background: url('../img/BG Left.jpg') left repeat-y, url('../img/BG Right.jpg') right repeat-y, white;
-    background-size: 10%;
+    background-size: 20%;
+    top: 12px;
+    left: 12px;
     height: 100%;
     width: 100%;
-    top: 12px;
-    left: 10px;
     padding: 25px;
     pointer-events: all;
+    filter: drop-shadow(0px 1px 2px rgba(0,0,0,.5));
+    border: #282c34 2px solid;
 }
 
-.modal-contents{
-    height: 100%;
-    width: 100%;
+.modal-container{
     transition: opacity 300ms  ease, transform 300ms ease;
     display: block;
 
 }
-.modal-border{
-    position: absolute;
-    top: 0;
-    left:0;
-    z-index: 102;
-    border: 60px solid transparent;
-    border-image: url('../img/Modal Border.png') 60 stretch;
-    pointer-events: none;
-    height: calc(100% + 24px);
-    width: calc(100% + 20px);
+
+
+.alert-button-container{
+    display: inline-block;
+    text-align: right;
+    width: 100%;
 }
+
+.alert-content{
+    text-align: center;
+    margin: 15px 15px 25px 15px;
+    padding: 0 10px;
+    font-size: 18px;
+}
+
+.alert-button{
+    width: auto;
+    padding: 6px 25px;
+    background-color: #282c34;
+    color: white;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
 
 /** ANIMATIONS FOR MODALS */
 .animate-enter {
@@ -72,51 +87,4 @@
     transform: translatey(25px);
     display: block;
 }
-
-
-.alert-background-container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1000;
-    filter: drop-shadow(0px 1px 2px black);
-    background-color: white;
-}
-
-.alert-corner-img{
-    height: 80px;
-    width: 80px;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-}
-
-.alert-corner-bottom{
-    background: url('../img/Modal Corner Bottom.png');
-}
-.alert-corner-top{
-    background: url('../img/Modal Corner Top.png');
-}
-
-.bg-flip{
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: 'FlipH';
-    -ms-filter: 'FlipH';
-}
-
-.alert-button-container{
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-}
-
-.alert-content{
-    text-align: center;
-    margin: 0 0 20px 0;
-    font-size: 20px;
-}
+/** END OF ANIMATIONS FOR MODALS */

@@ -1,6 +1,5 @@
 import React, {useState, useEffect, createContext} from 'react';
 
-// import {getCode} from '../data/codes'
 const
     TEN_SECONDS = 10000,
     HALF_MINUTE = 30000,
@@ -29,7 +28,8 @@ const SplashAlertProvider = (props) => {
 
         if(content) setVisible(true)
         else setVisible(false)
-    }, [content])
+    // eslint-disable-next-line
+    }, [content]);
 
     useEffect(() => {
 
@@ -39,6 +39,7 @@ const SplashAlertProvider = (props) => {
 
                 setContent(null);
             }, duration))
+    // eslint-disable-next-line
     }, [duration])
 
     return (

@@ -31,6 +31,7 @@ const UserContainer = (props) => {
                             <LoginContainer
                                 handleLogout={context.handleLogout}
                                 modalVisible={context.loginModalVisible}
+                                setModalVisible={context.setLoginModalVisible}
                                 setLoginModalVisible={context.setLoginModalVisible}
                                 setUserRegistrationModalVisible={context.setUserRegistrationModalVisible}
                                 setResetPasswordVisible={context.setResetPasswordVisible}
@@ -38,12 +39,15 @@ const UserContainer = (props) => {
                             />
                             <RegisterUserContainer
                                 modalVisible={context.userRegistrationModalVisible}
+                                setModalVisible={context.setUserRegistrationModalVisible}
                                 setUserRegistrationModalVisible={context.setUserRegistrationModalVisible}
                                 setLoginModalVisible={context.setLoginModalVisible}
                                 alert={alert.alert}
+                                confirm={alert.confirm}
                             />
                             <PasswordResetContainer
                                 modalVisible={context.resetPasswordVisible}
+                                setModalVisible={context.setResetPasswordVisible}
                                 setResetPasswordVisible={context.setResetPasswordVisible}
                                 setLoginModalVisible={context.setLoginModalVisible}
                                 stage={resetPasswordStage}

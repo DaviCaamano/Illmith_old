@@ -1,18 +1,21 @@
 import React, {useState, createContext} from 'react';
-import axios from "axios";
+import { useDispatch } from 'react-redux';
 import {useCookies} from "react-cookie";
-import codes, {getCode} from '../data/codes'
+import axios from "axios";
+
+//Redux
+import { logout } from '../redux/users';
+import store from "../redux";
+
+//Data
+import codes from '../data/codes'
 
 const { Provider, Consumer} = createContext({});
 
 const UserContextProvider = (props) => {
 
-    const [cookies, setCookie, removeCookie] = useCookies([
-        'username',
-        'user_id',
-        'email',
-        'token'
-    ])
+    const dispatch = useDispatch();
+    const [cookies, setCookie, removeCookie] = useCookies(['token'])
 
     //Modal Visibility
     const [userRegistrationModalVisible, setUserRegistrationModalVisible] = useState(false);
@@ -20,7 +23,11 @@ const UserContextProvider = (props) => {
     const [resetPasswordVisible, setResetPasswordVisible] = useState(false);
 
 
-    const isLoggedIn = () => cookies.email && cookies.email !== 'null';
+    const isLoggedIn = () => {
+
+        const email = store.getState().user.email;
+        return email && email !== 'null';
+    }
 
     const raiseLoginModal = () => setLoginModalVisible(true);
 
@@ -29,40 +36,29 @@ const UserContextProvider = (props) => {
         axios({
             method: 'post',
             url: process.env.REACT_APP_API_URL + '/users/logout',
-            data: { userId: cookies.userId }
+            data: { token: cookies.token }
         }).then(resp => {
 
             removeLoginCookies();
+            dispatch(logout());
         }).catch((err) => {
 
             props.alert(codes.Error.Logout.generic.message)
         })
     }
 
-    const setLoginCookies = (email, userId, username, token, tokenExpiration) => {
+    const setLoginCookies = (token, tokenExpiration) => {
 
-        //clear existing cookies
-        removeCookie('username');
-        removeCookie('userId');
-        removeCookie('email');
+        //clear existing cookie
         removeCookie('token');
 
         let expires = new Date(Date.now() + tokenExpiration)
         //replace existing cookies
-        setCookie('username', username, { expires });
-        setCookie('userId', userId, { expires});
-        setCookie('email', email, { expires });
         setCookie('token', token, { expires });
     }
     const removeLoginCookies = () => {
 
-        //clear existing cookies
-        //clear existing cookies
-        removeCookie('username');
-        removeCookie('name');
-        removeCookie('user_id');
-        removeCookie('userId');
-        removeCookie('email');
+        //clear existing token cookie
         removeCookie('token');
     }
 

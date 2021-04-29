@@ -8,6 +8,7 @@
 .user-title{
     font-size: 30px;
     margin-bottom: 15px;
+    font-weight: 500;
 }
 
 .user-title-right{
@@ -19,11 +20,14 @@
     text-decoration: none;
 }
 
+label{
+    font-size: 18px;
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+
 .login-label, .register-user-label, .reset-password-label{
-    display: inline-block;
-    margin-top: .5rem;
-    margin-bottom: 5px;
-    font-size: 21px;
+    float:left;
 }
 
 /* Full-width input fields */
@@ -33,7 +37,7 @@
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 /* Set a style for all buttons */
@@ -53,7 +57,7 @@ button:hover {
 
 span.psw {
     float: right;
-    padding-top: 16px;
+    padding-top: 10px;
 }
 
 /* The Close Button (x) */
@@ -155,12 +159,11 @@ span.psw {
 
 
 #login-warning, #register-user-warning, #reset-password-warning{
-    min-height: 20px;
-    line-height: 18px;
-    display: block;
-    margin: 3px 0;
+    height: 20px;
     color: red;
     font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
 }
 
 .register-user-infobox{
@@ -168,6 +171,7 @@ span.psw {
     padding: 16px;
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 
@@ -188,4 +192,19 @@ span.psw {
     display: inline-block;
     margin-left: 5%;
     font-size: 16px;
+}
+
+.warning-text{
+    text-align: right;
+    color: red;
+    position: relative;
+    top: 4px;
+    font-size: 14px;
+}
+
+.label-optional-tag{
+    font-weight: 500;
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
 }

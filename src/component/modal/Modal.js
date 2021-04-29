@@ -6,27 +6,28 @@ import '../../css/Modal.css'
 
 const Modal = (props) => {
 
-    const transitionFuncs = {};
-    if(props.onEnter) transitionFuncs.onEnter = props.onEnter;
-    if(props.onExit) transitionFuncs.onExit = props.onExit;
-
     return (
         <div
-            className={`modal-container`}
-            style={props.modalSize? { ...props.modalSize }: {}}
+            className={`modal-backdrop d-none`}
+            ref={props.backdropRef}
+            onClick={props.onBackdropClick}
+            style={props.zIndex? { zIndex: props.zIndex }: {}}
         >
             <CSSTransition
                 in={props.visible}
                 unmountOnExit
                 timeout={300}
                 classNames={'animate'}
-                {...transitionFuncs}
+                {...props.transitionFuncs}
             >
-                <div className='modal-contents'>
+                <div
+                    className='modal-container'
+                    style={props.modalSize? { ...props.modalSize }: {}}
+                    onClick={(e) => {e.stopPropagation();}}
+                >
                     <div className="modal">
                         {props.children}
                     </div>
-                    <div className="modal-border"/>
                 </div>
             </CSSTransition>
         </div>

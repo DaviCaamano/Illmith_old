@@ -1,10 +1,9 @@
 import React from 'react';
-import {Link, useRouteMatch } from 'react-router-dom';
+import {Link, useLocation  } from 'react-router-dom';
 
 const Navbar = (props) => {
 
-    const {path} = useRouteMatch();
-
+    const location = useLocation ();
     return (
         <div id="navbar-links">
             {
@@ -12,8 +11,9 @@ const Navbar = (props) => {
                     (element) =>
                         <Link
                             key={element.name}
-                            to={element.to}
-                            className={`header-element ${element.to === path? 'header-element-current-page': ''}`}
+                            to={element.external? {pathname: element.to}: element.to}
+                            className={`header-element ${element.to === location.pathname? 'header-element-current-page': ''}`}
+                            target={element.external? 'blank': ''}
                         >
                             {element.name}&nbsp;
                         </Link>

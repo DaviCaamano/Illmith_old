@@ -9,6 +9,10 @@ const codes = {
             invalidCredential: {
                 message: 'Invalid Login Information.',
                 code: 'ILI_LOGIN'
+            },
+            tooManyAttempts: {
+                message: 'Too many attempts, please wait before trying again.',
+                code: 'TMA_LOGIN'
             }
         },
         UserRegistration: {
@@ -25,15 +29,15 @@ const codes = {
                 code: 'EMU_UREG'
             },
             invalidUsername: {
-                message: 'Must contain only letters, numbers and underscore(_).',
+                message: 'Must contain only letters, numbers or underscore(_).',
                 code: 'IUN_UREG'
             },
             invalidEmail:{
-                message: 'Username already in use.',
+                message: 'Invalid email.',
                 code: 'IEM_UREG'
             },
             invalidPassword: {
-                message: 'Invalid Account Password. See Below for password requirements.',
+                message: 'Invalid Account Password. See Below for password requirments.',
                 code: 'IPW_UREG'
             },
             emailTooLong: {
@@ -47,36 +51,30 @@ const codes = {
             emailNotValidated: {
                 message: 'Visit the link in the Registration email to finish registering this account.',
                 code: 'ENV_UREG'
+            },
+            userRegistraitionLinkInvalid: {
+                message: 'This user registration link is invalid or expired.',
+                code: 'RLI_UREG'
+            },
+            tooManyAttempts: {
+                message: 'Too many attempts, please wait before trying again.',
+                code: 'TMA_UREG'
             }
         },
         ResetPassword: {
             generic: {
-                message: 'Error Resetting Password.',
+                message: 'Error Completing Password Reset.',
                 code: 'NA_PWRS'
             },
-            logoutRequired: {
-                message: 'Password Reset cannot proceed while you are logged in.',
-                code: 'LRQ_PWRS'
-            },
-        },
-        Logout: {
-            generic: {
-                message: 'Error logging user out.',
-                code: 'NA_USLO'
+            forgotPasswordLinkInvalid: {
+                message: 'This link is invalid or expired.',
+                code: 'PLI_UREG'
             }
         }
     },
     Generic:{
         message: 'Internal Error.',
         code: 'IER_GNR'
-    },
-    ResetPassword: {
-        success: {
-            message: 'Your password has been reset.'
-        },
-        emailSent: {
-            message: 'A reset email has been sent to the email associated with this account.'
-        }
     }
 }
 

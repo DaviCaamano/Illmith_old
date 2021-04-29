@@ -1,10 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter as Router} from 'react-router-dom';
-import { CookiesProvider } from 'react-cookie';
+
 import * as serviceWorker from './serviceWorker';
 
-//css
+//Module Providers
+import {Provider} from 'react-redux';
+import { CookiesProvider } from 'react-cookie';
+
+//Redux
+import store from './redux'
+
+//Global CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './css/index.css';
@@ -13,11 +20,13 @@ import App from './App';
 
 //<ReduxProvider store={store}>
 ReactDOM.render(
-    <CookiesProvider>
-        <Router>
-            <App />
-        </Router>
-    </CookiesProvider>,
+    <Provider store={store}>
+        <CookiesProvider>
+            <Router>
+                <App />
+            </Router>
+        </CookiesProvider>
+    </Provider>,
   document.getElementById('root')
 );
 

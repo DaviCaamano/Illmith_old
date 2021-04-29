@@ -19,10 +19,11 @@ const AlertContainer = (props) => {
                     setVisible={context.setVisible}
                     height={context.height}
                     width={context.width}
+                    zIndex={110}
                 >
                     <AlertContent
                         content={context.content}
-                        buttonType={context.buttonType}
+                        buttonInfo={context.buttonInfo}
                         close={context.close}
                     />
                 </ModalContainer>

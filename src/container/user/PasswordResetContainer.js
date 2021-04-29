@@ -128,12 +128,14 @@ const PasswordResetContainer = (props) => {
         }
 
     }
-
+    const onBackdropClick = () => false;
     return (
             <ModalContainer
                 visible={props.modalVisible}
+                setVisible={props.setModalVisible}
                 height={(props.stage === 1)? '300px': '450px'}
                 width={'700px'}
+                onBackdropClick={onBackdropClick}
             >
                 <PasswordResetModal
                     stage={props.stage}

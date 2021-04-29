@@ -4,7 +4,6 @@ import previews from '../../data/mapPreviews';
 import '../../css/Splash.css';
 
 import Splash from '../../component/splash/Splash';
-import HorizontalFrameBar from '../../component/splash/HorizontalBarFrame';
 import SplashAlertContainer from './SplashAlertContainer';
 import {SplashAlertConsumer} from "../../context/SplashAlertContext";
 
@@ -90,8 +89,6 @@ const SplashContainer = (props) => {
 
                     }
                 </SplashAlertConsumer>
-
-                <HorizontalFrameBar styleElements={{ bottom:0, filter: 'drop-shadow(0px 3px 4px black)'  }} />
             </Splash>
 
     );

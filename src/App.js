@@ -1,7 +1,10 @@
 import React from 'react';
 
+
+//Global CSS
 import './css/App.css';
 
+//Context Providers
 import { UserContextProvider }  from './context/UserContext';
 import { SplashAlertProvider }  from './context/SplashAlertContext';
 import { AlertProvider }  from './context/AlertContext';

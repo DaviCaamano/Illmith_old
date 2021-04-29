@@ -46,8 +46,8 @@ const LoginModal = (props) =>
             required
             value={props.password}
             onChange={props.handlePasswordInputChange}
+            style={{ marginBottom: 0 }}
         />
-
         <span id={'login-warning'}>
             {props.warning}
         </span>
@@ -58,7 +58,7 @@ const LoginModal = (props) =>
             Login
         </button>
 
-        <label className={'login-label'} >
+        <label >
             <input
                 type="checkbox"
                 checked={props.remember}

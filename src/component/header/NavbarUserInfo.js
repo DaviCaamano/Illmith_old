@@ -1,21 +1,26 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { useCookies } from 'react-cookie';
 
 //components
 import UserMenuContainer from '../../container/header/UserMenuContainer';
 
 const NavbarUserInfo = (props) => {
 
-    const [cookies] = useCookies(['username', 'firstname', 'lastname', 'user_id', 'email', 'token'])
+    const {email, username} = useSelector(state => state.user);
+    const loggedIn = email || username;
+    const name = username && username !== 'null'
+        ? username
+        :email? email.split('@')[0]: null;
 
     return (
         <div id={'navbar-user-widget'} className={`header-element`} >
-            { cookies.email && cookies.emails !== 'null'
+            { loggedIn
                 ?   //If Logged in
                 <UserMenuContainer
                     handleLogout={props.handleLogout}
                     items={props.items}
+                    name={name}
                 />
                 :   //If Logged out
                 <Link

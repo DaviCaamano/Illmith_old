@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import img_Logo from "../../img/Logo Site.png";
 
 let Splash = (props) => {
 
@@ -8,7 +7,6 @@ let Splash = (props) => {
 
     return (
         <div id={'splash-box'}>
-            <img id='splash-logo' src={img_Logo} alt={''}/>
             <div
                 id={'firstBox'}
                 className={'splash'
