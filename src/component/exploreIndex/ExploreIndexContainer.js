@@ -1,5 +1,5 @@
 import React from 'react';
-import {useRouteMatch} from 'react-router-dom';
+// import {useRouteMatch} from 'react-router-dom';
 
 //data
 import itemData from './data/exploreItems'
@@ -9,7 +9,7 @@ import ExploreIndexItem from "./index/ExploreIndexItem";
 
 const ExploreIndexContainer = (props) => {
 
-    let { url } = useRouteMatch();
+    // let { url } = useRouteMatch();
 
     const items = itemData.map(({title, description, thumbnail, link}) =>
         <ExploreIndexItem key={title} title={title} description={description} thumbnail={thumbnail} link={link}/>

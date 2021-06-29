@@ -2,10 +2,10 @@
 <project version="4">
   <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
-      <paths name="StoryStringApi">
+      <paths name="Front">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/sennos" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

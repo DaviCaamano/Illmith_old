@@ -12,13 +12,10 @@ const exploreItems = [
     },
     {
         title: 'People of Illmith',
-        description: 'Read the strange and storied history of Illmith and how it\s peoples survived and prosper.',
+        description: 'Read the strange and storied history of Illmith and how it\'s peoples survived and prosper.',
         thumbnail: 'place default.jpg'
     },
 
 ]
-
-
-
 
 export default exploreItems;

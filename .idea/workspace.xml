@@ -2,230 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3f66ee4-eac8-4f20-9a7b-9a25bfe0ea38" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/_app/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_app/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_app/Article.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_app/DarkFrame.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_app/Markdown.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/articleContent/ArticleContent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/articleContent/ArticleContentContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/articleContent/articleNavbar/ArticleNavbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/articleContent/articleNavbar/relatedArticleItem/RelatedArticleItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/articleContent/articleNavbar/sectionIndex/SectionIndex.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/articleContent/sectionTitle/SectionTitle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/borders/Borders.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/borders/squareLoop/SquareLoop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/darkFrame/DarkFrame.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/fileInput/FileInput.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/image/ImageUpload/ImageUpload.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/image/ImageUpload/ImageUpload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/image/imagePreview/ImagePreview.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/image/imagePreview/ImagePreview.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/inputError/InputError.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/inputError/InputError.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/inputError/InputErrorContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/loading/loading.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/modal/loadingModal/LoadingModal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/modal/loadingModal/LoadingModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/modal/loadingModal/LoadingModalContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/quote/Quote.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/quote/Quote.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/table/collapsableTable/CollapsableTable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/table/collapsableTable/CollapsableTableContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/table/collapsableTable/Table.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/table/collapsableTable/component/editableCell/EditableCell.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/table/collapsableTable/component/pagination/Pagination.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/table/collapsableTable/component/pagination/PaginationContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/table/collapsableTable/component/tab/Tab.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/table/collapsableTable/component/tab/Tabs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/table/collapsableTable/component/tab/Tabs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/table/utils/searchString.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/toggleSwitch/ToggleSwitch.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/toggleSwitch/ToggleSwitch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/alert/navAlert/NavAlert.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/alert/navAlert/NavAlert.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/alert/navAlert/NavAlertContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/body/Body.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/body/Body.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/exploreIndex/ExploreIndex.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/exploreIndex/ExploreIndexContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/exploreIndex/data/exploreItems.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/exploreIndex/index/ExploreIndexItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/footer/Footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/footer/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/header/navbar/Navbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/header/navbar/userMenu/UserMenuContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/header/utils/navbarElements.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/header/utils/userMenuItems.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/mapCanvas/MapCanvas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/mapCanvas/Regions/Regions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/mapCanvas/canvasTitle/CanvasTitle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/mapCanvas/data/regionData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/splash/Splash.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/temp/Temp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/user/scene" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/data/appUrl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/data/codes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/data/markdownOptions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/fonts/GrenadierNF.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/Alert Border.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/BG Corner Left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/BG Corner Right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/Exclamation Alert.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/Exclamation Box.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/File Download Icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/Footer BG.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/Illmith.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/Loading.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/back button.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/bg corner left.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/bg corner right.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/bg spots.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/check.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/circle check.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/circle cross.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/close button circle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/collapsed icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/cross.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/delete icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/download.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/facebook.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/forward arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/header logo.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/minus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/nav BG.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/news items/aftermaft.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/plus white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/plus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/quote.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/reddit.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region canvas/aftermaft.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region canvas/asif.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region canvas/elimet.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region canvas/estil.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region canvas/eurn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region canvas/explore.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region canvas/farkin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region canvas/fogbind.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region canvas/forgos.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region canvas/logo.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region canvas/moltemim.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region canvas/mox.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region canvas/nelium.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region canvas/noft.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region canvas/ocril.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region canvas/ountif.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region canvas/rauhem.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region canvas/solenka.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region canvas/steamlands.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region canvas/terristil.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region canvas/trosbin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region canvas/wrasmire.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region flag box/aftermaft.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region flag box/asif.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region flag box/blank.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region flag box/estil.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region flag box/eurn.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region flag box/maft.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region flag box/mox.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region flag box/nelium.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region flag box/noft.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region flag box/ocril.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region flag box/ountif.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region flag box/rauhem.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region flag box/terristil.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region flag box/trosbin.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/region flag box/wrasmire.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/related article thumbnail gloss.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/search icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/search icon.svg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/select down icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/select down icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/select left icon tall.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/select left icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/select right icon tall.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/select right icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/tab bottom gray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/tab bottom.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/tab top gray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/tab top.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/title frame.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/img/twitter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scene/Article.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scene/Explore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scene/css/Article.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scene/css/Explore.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Sennos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Sennos.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_app/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/header/Navbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/header/NavbarUserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/header/navbar/navbarUserInfo/NavbarUserInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/header/UserMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/header/navbar/userMenu/UserMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/header/UserMenuBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/header/navbar/userMenu/userMenuBox/UserMenuBox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/modal/AlertContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/alert/alertContent/AlertContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/modal/Modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/modal/modal/Modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/news/News.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/articleContent/articleNavbar/relatedArticles/RelatedArticles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/splash/Splash.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/splash/Splash.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/splash/SplashAlert.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/user/LoginModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/user/login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/user/PasswordResetModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/user/passwordReset/PasswordReset.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/user/RegisterUserModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/user/register/RegisterUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/header/NavContainer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/header/UserMenuContainer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/modal/AlertButtonContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/alert/alertButton/AlertButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/modal/AlertContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/alert/Alert.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/modal/ModalContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/modal/modal/ModalContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/news/NewsContainer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/splash/SplashAlertContainer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/splash/SplashContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/splash/SplashContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/user/CompletePasswordReset.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/CompletePasswordReset.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/user/CompleteUserRegistration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/CompleteUserRegistration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/user/LoginContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/user/login/LoginContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/user/PasswordResetContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/user/passwordReset/PasswordResetContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/user/RegisterUserContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/user/register/RegisterUserContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/user/UserContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scene/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/AlertContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/AlertContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/SplashAlertContext.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/UserContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/UserContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/header/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scene/css/User.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/Modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/modal/modal/Modal.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/Splash.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/codes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/mapPreviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/splash/utils/mapPreviews.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/navbarElements.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/BG Left.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/img/BG Left.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/BG Right.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/img/BG Right.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/Exclamation Alert.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/img/Exclamation Alert.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/Logo Text.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/img/Logo Text.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/Map Preview 1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/img/Map Preview 1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/Map Preview 2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/img/Map Preview 2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/Map Preview 3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/img/Map Preview 3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/Map Preview 4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/img/Map Preview 4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/Splash Alert Border.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/img/Splash Alert Border.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/back button.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/exploreIndex/ExploreIndexContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/exploreIndex/ExploreIndexContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/exploreIndex/data/exploreItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/exploreIndex/data/exploreItems.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/temp/Temp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/temp/Temp.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,15 +15,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectId" id="1s4wYFZ1v69MnfTU7b7nikR71nh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -252,35 +32,20 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/component/footer" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.1.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Leaf-PC\WebstormProjects\sennos\src\component\footer" />
-      <recent name="C:\Users\Leaf-PC\WebstormProjects\sennos\src\resources" />
-      <recent name="C:\Users\Leaf-PC\WebstormProjects\sennos\src\common" />
-      <recent name="C:\Users\davit\WebstormProjects\sennos\src\common" />
-      <recent name="C:\Users\davit\WebstormProjects\sennos\src\component\user\register" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Leaf-PC\WebstormProjects\sennos\src\common\table\pagination" />
-      <recent name="C:\Users\Leaf-PC\WebstormProjects\sennos\src\common\table\utils" />
-      <recent name="C:\Users\Leaf-PC\WebstormProjects\sennos\src\common\table" />
-      <recent name="C:\Users\Leaf-PC\WebstormProjects\sennos\src\component\header\utils" />
-      <recent name="C:\Users\Leaf-PC\WebstormProjects\sennos\src\component\splash\utils" />
-    </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -306,62 +71,33 @@
       <option name="presentableId" value="Default" />
       <updated>1620145215079</updated>
       <workItem from="1620145217387" duration="22000" />
-      <workItem from="1620163460592" duration="7000" />
-      <workItem from="1620185102970" duration="129000" />
-      <workItem from="1620201438342" duration="1225000" />
-      <workItem from="1620230437233" duration="54000" />
-      <workItem from="1620239829405" duration="5000" />
-      <workItem from="1620410266218" duration="594000" />
-      <workItem from="1620756397282" duration="147000" />
-      <workItem from="1621709717459" duration="7523000" />
-      <workItem from="1621764826744" duration="11954000" />
-      <workItem from="1621836904521" duration="5000" />
-      <workItem from="1621881869553" duration="2436000" />
-      <workItem from="1621972739530" duration="14000" />
-      <workItem from="1622164887297" duration="138000" />
-      <workItem from="1622165613690" duration="5000" />
-      <workItem from="1622215695086" duration="62000" />
-      <workItem from="1622936009032" duration="939000" />
-      <workItem from="1622945502252" duration="16232000" />
-      <workItem from="1622988198971" duration="13883000" />
-      <workItem from="1623041349556" duration="1107000" />
-      <workItem from="1623060484147" duration="44829000" />
-      <workItem from="1623285983949" duration="6568000" />
-      <workItem from="1623326271439" duration="22485000" />
-      <workItem from="1623585635293" duration="64033000" />
-      <workItem from="1623788878651" duration="1000" />
-      <workItem from="1623850841772" duration="29539000" />
-      <workItem from="1623976898630" duration="1535000" />
-      <workItem from="1624282527892" duration="2544000" />
-      <workItem from="1624533431090" duration="1814000" />
-      <workItem from="1624828960633" duration="596000" />
-      <workItem from="1624900112439" duration="594000" />
-      <workItem from="1624965165964" duration="12000" />
-      <workItem from="1624965183012" duration="956000" />
-      <workItem from="1624966167544" duration="9937000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/component/user/register/RegisterUser.js</url>
-          <line>144</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/component/user/register/RegisterUserContainer.js</url>
-          <line>180</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
