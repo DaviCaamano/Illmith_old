@@ -2,26 +2,25 @@ import React, {useState, createContext} from 'react';
 import { useDispatch } from 'react-redux';
 import {useCookies} from "react-cookie";
 import axios from "axios";
-
+import moment from 'moment'
 //Redux
 import { logout } from '../redux/users';
 import store from "../redux";
 
 //Data
-import codes from '../data/codes'
+import codes from '../resources/data/codes'
 
 const { Provider, Consumer} = createContext({});
 
-const UserContextProvider = (props) => {
+const UserContextProvider = React.memo((props) => {
 
     const dispatch = useDispatch();
-    const [cookies, setCookie, removeCookie] = useCookies(['token'])
+    const [, setCookie, removeCookie] = useCookies(['token'])
 
     //Modal Visibility
-    const [userRegistrationModalVisible, setUserRegistrationModalVisible] = useState(false);
     const [loginModalVisible, setLoginModalVisible] = useState(false);
+    const [userRegistrationModalVisible, setUserRegistrationModalVisible] = useState(false);
     const [resetPasswordVisible, setResetPasswordVisible] = useState(false);
-
 
     const isLoggedIn = () => {
 
@@ -36,7 +35,6 @@ const UserContextProvider = (props) => {
         axios({
             method: 'post',
             url: process.env.REACT_APP_API_URL + '/users/logout',
-            data: { token: cookies.token }
         }).then(resp => {
 
             removeLoginCookies();
@@ -52,7 +50,7 @@ const UserContextProvider = (props) => {
         //clear existing cookie
         removeCookie('token');
 
-        let expires = new Date(Date.now() + tokenExpiration)
+        let expires = new Date(moment(tokenExpiration).toDate())
         //replace existing cookies
         setCookie('token', token, { expires });
     }
@@ -71,9 +69,9 @@ const UserContextProvider = (props) => {
             //Modal Visibility
             loginModalVisible,
             setLoginModalVisible,
+            raiseLoginModal,
             userRegistrationModalVisible,
             setUserRegistrationModalVisible,
-            raiseLoginModal,
             resetPasswordVisible,
             setResetPasswordVisible,
         }}>
@@ -81,6 +79,6 @@ const UserContextProvider = (props) => {
         </Provider>
     )
 
-}
+});
 
 export { UserContextProvider, Consumer as UserContextConsumer };

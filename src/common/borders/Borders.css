@@ -1,0 +1,13 @@
+.square-loop{
+    position: absolute;
+    border: 60px solid transparent;
+    border-image: url('../../resources/img/Alert Border.png') 60 stretch;
+    top: -7px;
+    left: -7px;
+    height: calc(100% + 14px);
+    width: calc(100% + 14px);
+}
+
+.square-loop-container{
+    position:relative;
+}

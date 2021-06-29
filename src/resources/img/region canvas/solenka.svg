@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1144" height="806" viewBox="0 0 1144 806">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #85114d;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Solenka" class="cls-1" d="M1036,244h79v21l18,18c-4.77,4.77-9.12,9.265-18,18.146V323h-79V244Z"/>
+</svg>

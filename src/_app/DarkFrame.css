@@ -1,0 +1,11 @@
+.dark-frame{
+    padding: 5px;
+    border: 1px solid darkgray;
+    background-color: #282c34
+}
+
+.inner-dark-frame{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
